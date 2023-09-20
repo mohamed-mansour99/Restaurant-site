@@ -1,6 +1,7 @@
 import React,{useState} from 'react';
 import{GiHamburgerMenu} from 'react-icons/gi';
 import { MdRestaurantMenu } from 'react-icons/md';
+import {Link} from 'react-router-dom';
 import images from '../../constants/images';
 import './Navbar.css';
 
@@ -12,11 +13,11 @@ return(
       <img src={images.gericht} alt="Logo" />
     </div>
     <ul className='app__navbar-links'>
-      <li className='p__opensans'><a href="#home">Home</a></li>
-      <li className='p__opensans'><a href="#about">About</a></li>
-      <li className='p__opensans'><a href="#menu">Menu</a></li>
-      <li className='p__opensans'><a href="#awards">Awards</a></li>
-      <li className='p__opensans'><a href="#contact">Contact</a></li>
+      <li className='p__opensans'><Link to="/">Home</Link></li>
+      <li className='p__opensans'><Link to="/About">About</Link></li>
+      <li className='p__opensans'><Link to="/Menu">Menu</Link></li>
+      <li className='p__opensans'><Link to="/Award">Award</Link></li>
+      <li className='p__opensans'><Link to="/Contact">Contact</Link></li>
     </ul>
     <div className='app__navbar-login'>
       <a href="#login" className='p__opensans'>Log In /Register</a>
