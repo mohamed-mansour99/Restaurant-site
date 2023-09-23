@@ -31,11 +31,11 @@ return(
       <div className='app__navbar-smallscren_overlay flex__center slide-bottom'>
         <MdRestaurantMenu  fontSize={27} className='overlay__close' onClick={()=> setToggleMenu(false)}/>
         <ul className='app__navbar-smallscreen-links'>
-        <li className='p__opensans'><a href="#home">Home</a></li>
-        <li className='p__opensans'><a href="#about">About</a></li>
-        <li className='p__opensans'><a href="#menu">Menu</a></li>
-        <li className='p__opensans'><a href="#awards">Awards</a></li>
-        <li className='p__opensans'><a href="#contact">Contact</a></li>
+        <li className='p__opensans'><Link to="/">Home</Link></li>
+      <li className='p__opensans'><Link to="/About">About</Link></li>
+      <li className='p__opensans'><Link to="/Menu">Menu</Link></li>
+      <li className='p__opensans'><Link to="/Award">Award</Link></li>
+      <li className='p__opensans'><Link to="/Contact">Contact</Link></li>
       </ul>
       </div>
       )}   
