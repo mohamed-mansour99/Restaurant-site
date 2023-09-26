@@ -2,8 +2,10 @@ import React from 'react';
 import { images } from '../../constants';
 import { SubHeading } from '../../components';
 import './Chef.css';
+import Laurels from '../Laurels/Laurels';
 
-const Chef = () => (
+const Chef = () =>{
+  return(      
   <div className='app__bg app__wrapper section__padding'>
     <div className='app__wrapper_img app__wrapper_img-reverse'> 
     <img src={images.chef} alt="Chef" />
@@ -27,6 +29,9 @@ const Chef = () => (
 
     </div>
   </div>
+
 );
 
+
+} 
 export default Chef;

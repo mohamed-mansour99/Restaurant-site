@@ -4,6 +4,7 @@ import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, Special
 import { Navbar } from './components';
 import './App.css';
 import Home from './pages/Home';
+import Chefs from './pages/Chefs';
 
 const App = () => (
   <div>
@@ -12,12 +13,14 @@ const App = () => (
     <Routes>
       <Route path='/' element={<Home /> } />
       <Route path='/Menu' element={<SpecialMenu />} />
-      <Route path='/Chef' element={<Chef />} />
+      <Route path='/Chef' element={<Chefs />} />
+      <Route path='/Contact' element={ <FindUs />} />
+      <Route path='/Award' element={      <Laurels/>} />
+
+
 
     </Routes>
-    <Laurels />
     <Gallery />
-    <FindUs />
     <Footer />
   </div>
 );

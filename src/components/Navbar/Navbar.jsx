@@ -16,7 +16,7 @@ return(
       <li className='p__opensans'><Link to="/">Home</Link></li>
       <li className='p__opensans'><Link to="/About">About</Link></li>
       <li className='p__opensans'><Link to="/Menu">Menu</Link></li>
-      <li className='p__opensans'><Link to="/Chef">Chef</Link></li>
+      <li className='p__opensans'><Link to="/Chef">Chefs</Link></li>
       <li className='p__opensans'><Link to="/Award">Award</Link></li>
       <li className='p__opensans'><Link to="/Contact">Contact</Link></li>
     </ul>
@@ -35,7 +35,7 @@ return(
         <li className='p__opensans'><Link to="/">Home</Link></li>
       <li className='p__opensans'><Link to="/About">About</Link></li>
       <li className='p__opensans'><Link to="/Menu">Menu</Link></li>
-      <li className='p__opensans'><Link to="/Chef">Chef</Link></li>
+      <li className='p__opensans'><Link to="/Chef">Chefs</Link></li>
       <li className='p__opensans'><Link to="/Award">Award</Link></li>
       <li className='p__opensans'><Link to="/Contact">Contact</Link></li>
       </ul>
