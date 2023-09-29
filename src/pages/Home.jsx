@@ -1,5 +1,5 @@
 import React from 'react'
-import { AboutUs, Header ,Intro} from '../container'
+import { AboutUs, Header ,Intro,Gallery} from '../container'
  
 
 const Home = () => {
@@ -7,10 +7,8 @@ const Home = () => {
     <div>
       <Header />
       <AboutUs />
+      <Gallery />
       <Intro />
-
-      
-      
     </div>
   )
 }
