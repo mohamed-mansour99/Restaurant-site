@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { meal } from '../../constants';
 import { BsPauseFill,BsFillPlayFill} from 'react-icons/bs'
 import './Intro.css';
+import Aos from "aos"
 
 const Intro = () =>{
+  useEffect(() => {
+    Aos.init({duration:2000})
+   }, [])
+
 const[playVideo,setplayVideo] =  useState(false);
   const VidRef = React.useRef();
       const handelVideo = () => {
@@ -15,7 +20,7 @@ const[playVideo,setplayVideo] =  useState(false);
         }
       }
   return(
-    <div className='app__video'>
+    <div className='app__video' data-aos="fade-down-left">
       <video  src={meal}
               ref={VidRef} 
               type='Video/mp4'
@@ -24,9 +29,9 @@ const[playVideo,setplayVideo] =  useState(false);
               muted
       
       />
-        <div className='app__video-overlay flex__center'>
+        <div className='app__video-overlay flex__center' >
           <div className='app__video-overlay-circle flex__center'
-          onClick={handelVideo}
+          onClick={handelVideo} 
           >
             {playVideo ? (<BsPauseFill color='#fff' fontSize={30} />) : <BsFillPlayFill  color='#fff' fontSize={30}/>}
             
